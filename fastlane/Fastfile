@@ -2,10 +2,13 @@ default_platform :ios
 
 platform :ios do
 
+    desc "something"
     lane :lint do |options|
 
-    swiftlint(
-        mode: :lint
+    slather(
+        scheme: "FastlaneTesting",
+        proj: "FastlaneTesting.xcodeproj",
+        html: true
     )
 
     end

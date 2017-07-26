@@ -1,2 +1,5 @@
 fastlane/report.xml
 fastlane/README.md
+
+.bundle/
+ruby/
