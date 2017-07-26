@@ -2,6 +2,14 @@ default_platform :ios
 
 platform :ios do
 
+    lane :lint do |options|
+
+    swiftlint(
+        mode: :lint
+    )
+
+    end
+
     lane :build do |options|
 
         ensure_git_status_clean
