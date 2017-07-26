@@ -12,6 +12,7 @@ platform :ios do
         commit_version_bump(message: "Release v1",
                             force:true)
 
+        push_to_git_remote
     end
 
 end
